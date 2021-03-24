@@ -38,7 +38,7 @@ export default {
 					standard: '', // 文档类型，默认是html5，可选 html5，loose，strict
 					extraHead: binding.value.extraHead, // 附加在head标签上的额外标签,使用逗号分隔
 					extraCss: binding.value.extraCss, // 额外的css连接，多个逗号分开
-					popTitle: binding.value.popTitle, // title的标题
+					popTitle: binding.value.popTitle || '', // title的标题
 					endCallback() { // 调用打印之后的回调事件
 						closeBtn = true;
 					}

@@ -45,7 +45,7 @@ export default class {
     }
     print() {
         let iframe = document.getElementById(this.settings.id);
-        let iframeWin = document.getElementById(this.settings.id).contentWindow;
+        let iframeWin = iframe.contentWindow;
         const _loaded = () => {
             iframeWin.focus();
             iframeWin.print();
